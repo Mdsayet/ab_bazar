@@ -1,68 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G TOOLS OFFICIAL</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        window.onload = function() {
-            var popup = document.getElementById('popup');
-            popup.style.display = 'flex';
-            popup.classList.add('popup-animation');
-
-            var closePopupButton = document.getElementById('closePopup');
-            var timer = 10;
-            var timerDisplay = document.getElementById('timerDisplay');
-            
-            var countdown = setInterval(function() {
-                timer--;
-                timerDisplay.textContent = timer;
-
-                if (timer <= 0) {
-                    clearInterval(countdown);
-                    closePopupButton.disabled = false;
-                    closePopupButton.textContent = "ওকে";
-                }
-            }, 1000);
-
-            closePopupButton.onclick = function() {
-                popup.style.display = 'none';
-            };
-        };
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AB BAZAR</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <p>আসসালামু আলাইকুম 🌸</p>
-            <p>আমাদের ফ্রী প্যানেল ইউজ করতে হলে আপনাকে কিছু কাজ করতে হবে</p>
-            <ol>
-                <li>টেলিগ্রামে চ্যানেল সাবস্ক্রাইব✅</li>
-                <li>ইউটিউব চ্যানেল সাবস্ক্রাইব✅</li>
-                <li>হোয়াটসঅ্যাপ চ্যানেল সাবস্ক্রাইব✅</li>
-            </ol>
-            <div id="timerDisplay">10</div>
-            <button id="closePopup" disabled>ওকে</button>
-        </div>
-    </div>
+  <header>
+    <h1>Welcome to AB BAZAR</h1>
+  </header>
+  
+  <section id="top-up">
+    <h2>Top-up Packages</h2>
+    <ul>
+      <li>Package 1: $10</li>
+      <li>Package 2: $20</li>
+      <li>Package 3: $50</li>
+    </ul>
+  </section>
 
-    <div class="container">
-        <div class="logo-container">
-            <img src="logo.png" alt="Company Logo" class="logo">
-        </div>
-        <h1 class="welcome">WELCOME TO</h1>
-        <h2 class="subtitle">G TOOLS OFFICIAL</h2>
-        <div class="divider"></div>
-        <div class="button-container">
-            <a href="https://t.me/G_Tools_Official" class="button telegram">TELEGRAM</a>
-            <a href="https://youtube.com/@g_tools_official" class="button youtube">YOUTUBE</a>
-            <a href="https://whatsapp.com/channel/0029VafxwdD72WU3acE7oV2q" class="button whatsapp">WHATSAPP</a>
-            <a href="https://youtu.be/ga9xXBbGHx0" class="button download">Download Panel</a>
-        </div>
-        <a href="tel:+8801987824364" class="phone-button">
-            📞 Call Us
-        </a>
-    </div>
+  <section id="adpond">
+    <h2>Ad Pond</h2>
+    <p>Place your ads here.</p>
+  </section>
+
+  <section id="submit">
+    <h2>Submit UID</h2>
+    <form>
+      <input type="text" id="uid" placeholder="Enter your UID">
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact via Telegram</h2>
+    <a href="https://t.me/yourtelegramhandle" target="_blank">Contact Me on Telegram</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AB BAZAR</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
